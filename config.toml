@@ -1,0 +1,55 @@
+title = "ianoit"
+baseurl = "https://ianoit.github.io/"
+
+# Agar front-matter pakai format YAML
+MetaDataFormat = "yaml"
+
+# untuk apply temanya
+themesDir = "themes"
+theme = "espresso"
+
+# Shortname disqus, silahkan sesuaikan
+DisqusShortname = "ianoit"
+
+# Untuk Google Analytic, silahkan sesuikan
+googleAnalytics = "UA-80517197-1" 
+
+# Untuk deskripsi tag meta di homepage
+description = "ianoit site"
+
+# Biodata Author
+[author]
+    name = "Yulian Safarudin"
+    homepage = "https://www.instagram.com/yuliansafarudin"
+    bio = "Web Programmer"
+    avatar = "/img/ianoit.webp"
+
+[[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog"
+    weight = 2
+
+[[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects"
+    weight = 3
+
+[[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact"
+    weight = 4
+
+[outputs]
+    section = ["JSON", "HTML"]
+
+[permalinks]
+    blog = "/:year/:month/:day/:slug/"
